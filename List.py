@@ -23,3 +23,32 @@ print(sum)
 # search element 
 num=[10,20,30,40,50]
 target=30
+
+
+# Search element in list 
+num = [10, 20, 30, 40, 50]
+
+target = 30
+found = False
+for i in range(len(num)):
+    if num[i] == target:
+        print("Element found at index", i)
+        found = True
+        break
+if found == False:
+    print("Element not found")
+
+# Count even odd numbers 
+num = [10, 20, 30, 40, 50, 7, 9, 13]
+
+even = 0
+odd = 0
+
+for i in range(len(num)):
+    if num[i] % 2 == 0:
+        even = even + 1
+    else:
+        odd = odd + 1
+
+print("Even numbers:", even)
+print("Odd numbers:", odd)
