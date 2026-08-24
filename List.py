@@ -69,3 +69,51 @@ for i in range(len(num)):
     for j in range(i + 1, len(num)):
         if num[i] == num[j]:
             print("Duplicate:", num[i])
+
+
+## Remove Duplicate Elemnt from list
+num = [10, 20, 10, 30, 20, 40]
+for i in range(len(num)):
+    for j in range(i + 1, len(num)):
+        if num[i] == num[j]:
+            num.remove(num[j])
+print(num)
+
+
+
+
+## Find SecondMax from list
+num = [10, 20, 30, 40, 60, 40]
+maxi = num[0]
+for i in range(len(num)):
+    if num[i] > maxi:
+        maxi = num[i]
+secondMax = num[0]
+for i in range(len(num)):
+    if num[i] != maxi and num[i] > secondMax:
+        secondMax = num[i]
+
+print("Maximum:", maxi)
+print("Second Maximum:", secondMax)
+
+
+## Find Two Sum in list
+num = [10, 20, 38, 90]
+target = 38
+for i in range(len(num)):
+    for j in range(len(num)):
+        if num[i] + num[j] == target:
+            print(num[i], num[j])
+
+
+
+## Move All Zeros
+num = [1, 0, 4, 5, 0, 8, 9]
+for i in range(len(num)):
+    if num[i] == 0:
+        for j in range(i + 1, len(num)):
+            if num[j] != 0:
+                num[i] = num[j]
+                num[j] = 0
+                break
+print(num)
