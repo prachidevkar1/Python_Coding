@@ -52,3 +52,20 @@ for i in range(len(num)):
 
 print("Even numbers:", even)
 print("Odd numbers:", odd)
+
+
+## Find Missing Number in list
+num = [1, 2, 3, 5]
+n = 5
+for i in range(1, n + 1):
+    if i not in num:
+        print("Missing number:", i)
+
+
+
+## Find Duplicate Element from list
+num = [10, 20, 10, 30, 20, 40]
+for i in range(len(num)):
+    for j in range(i + 1, len(num)):
+        if num[i] == num[j]:
+            print("Duplicate:", num[i])
