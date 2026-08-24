@@ -116,4 +116,34 @@ for i in range(len(num)):
                 num[i] = num[j]
                 num[j] = 0
                 break
-print(num)
+ print(num)
+
+
+
+## Print Comman element from two list
+num1=[10,20,30,40]
+num2=[20,30,11,70]
+for i in range(len(num1)):
+    for j in range(len(num2)):
+        if num1[i]== num2[j]:
+            print("comman element from both list",num1[i])
+
+
+## Merge two list
+num1 = [10, 20, 30]
+num2 = [40, 50, 60]
+num3 = []
+for i in range(len(num1)):
+    num3.append(num1[i])
+for j in range(len(num2)):
+    num3.append(num2[j])
+print(num3)
+
+OR
+num1 = [10, 20, 30]
+num2 = [40, 50, 60]
+
+num3 = num1 + num2
+
+print(num3)
+
