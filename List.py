@@ -142,8 +142,24 @@ print(num3)
 OR
 num1 = [10, 20, 30]
 num2 = [40, 50, 60]
-
 num3 = num1 + num2
-
 print(num3)
+
+
+
+
+##Maximum subarray sum
+num = [10, 20, -4, 5, -2, 8, 9]
+max_sum = 0
+for i in range(len(num)):
+    current_sum = 0
+    for j in range(i, len(num)):
+        current_sum = current_sum + num[j]
+
+        if current_sum > max_sum:
+            max_sum = current_sum
+print("Maximum subarray sum:", max_sum)
+
+
+
 
