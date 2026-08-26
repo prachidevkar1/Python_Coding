@@ -163,3 +163,16 @@ print("Maximum subarray sum:", max_sum)
 
 
 
+## Find leader element 
+num = [10, 30, 70, 44, 33, 12]
+for i in range(len(num)):
+  is_leader = True
+ for j in range(i + 1, len(num)):
+      if num[i] <= num[j]:
+            is_leader = False
+            break
+         if is_leader:
+        print("Leader element:", num[i])
+
+
+
