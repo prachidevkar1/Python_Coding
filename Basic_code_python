@@ -4,3 +4,22 @@ if n%2==0:
   print(even)
 else:
   print("odd")
+
+Multiplication Table
+n=int(input("enter any no"))
+for i in range(1,11):
+  mul=n*i
+  print(mul)
+
+
+## Fibonacci 
+n = int(input("Enter any no: "))
+
+a = 0
+b = 1
+
+for i in range(0, n):
+    c = a + b
+    print(c)
+    a = b
+    b = c
